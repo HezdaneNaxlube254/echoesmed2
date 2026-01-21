@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Echoes of Joy School | Premier Private Education in Kenya | Nurturing Excellence, Building Character">
+    <meta name="keywords" content="private school kenya, premium education, academic excellence, nairobi school, international curriculum">
+    <meta name="author" content="Echoes of Joy School">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://echoesofjoy.ac.ke/">
+    <meta property="og:title" content="Echoes of Joy School | Premier Education in Kenya">
+    <meta property="og:description" content="Discover premium education that nurtures excellence, builds character, and prepares future leaders.">
+    <meta property="og:image" content="https://echoesofjoy.ac.ke/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://echoesofjoy.ac.ke/">
+    <meta property="twitter:title" content="Echoes of Joy School | Premier Education in Kenya">
+    <meta property="twitter:description" content="Discover premium education that nurtures excellence, builds character, and prepares future leaders.">
+    <meta property="twitter:image" content="https://echoesofjoy.ac.ke/images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <title>Echoes of Joy School | Premier Private Education in Kenya</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            /* Brand Colors - Premium Palette */
+            --primary-blue: #1a365d;
+            --accent-gold: #d4af37;
+            --secondary-teal: #2d7a7a;
+            --light-cream: #f8f5f0;
+            --dark-charcoal: #2d3748;
+            --pure-white: #ffffff;
+            --gray-light: #f7fafc;
+            --gray-medium: #e2e8f0;
+            
+            /* Typography */
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+            
+            /* Spacing */
+            --section-padding: 5rem 2rem;
+            --container-max: 1200px;
+            --border-radius: 12px;
+            --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            line-height: 1.6;
+            color: var(--dark-charcoal);
+            background-color: var(--pure-white);
+            overflow-x: hidden;
+        }
+        
+        /* Accessibility Focus */
+        :focus-visible {
+            outline: 3px solid var(--accent-gold);
+            outline-offset: 3px;
+        }
+        
+        .skip-to-content {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        
+        .skip-to-content:focus {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: auto;
+            height: auto;
+            padding: 10px;
+            background: var(--primary-blue);
+            color: white;
+            z-index: 9999;
+        }
+        
+        /* Header & Navigation */
+        .main-header {
+            background-color: var(--pure-white);
+            box-shadow: var(--shadow-subtle);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-teal));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+        }
+        
+        .logo-text h1 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--primary-blue);
+            line-height: 1.2;
+        }
+        
+        .logo-text span {
+            color: var(--accent-gold);
+        }
+        
+        .logo-text .tagline {
+            font-size: 0.8rem;
+            color: var(--secondary-teal);
+            font-weight: 500;
+        }
+        
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .main-nav a {
+            text-decoration: none;
+            color: var(--dark-charcoal);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: var(--primary-blue);
+        }
+        
+        .main-nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .main-nav a:hover:after,
+        .main-nav a.active:after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            cursor: pointer;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 0.95rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: var(--pure-white);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary-teal);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--primary-blue);
+            color: var(--pure-white);
+            transform: translateY(-2px);
+        }
+        
+        .btn-accent {
+            background-color: var(--accent-gold);
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+        
+        .btn-accent:hover {
+            background-color: #c19b2e;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            min-height: 90vh;
+            background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.7)), 
+            url('images/hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            color: var(--pure-white);
+            padding-top: 80px;
+        }
+        
+        .hero-container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: var(--section-padding);
+            width: 100%;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background-color: rgba(212, 175, 55, 0.2);
+            color: var(--accent-gold);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            max-width: 600px;
+        }
+        
+        .hero-cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            display: block;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
+        }
+        
+        /* Sections Common */
+        section {
+            padding: var(--section-padding);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-subtitle {
+            color: var(--accent-gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .section-description {
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--dark-charcoal);
+            font-size: 1.1rem;
+        }
+        
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+        }
+        
+        /* About Section */
+        .about-section {
+            background-color: var(--light-cream);
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .mission-card, .vision-card {
+            background: var(--pure-white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-subtle);
+            border-top: 4px solid var(--accent-gold);
+        }
+        
+        .mission-card h3, .vision-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-family: var(--font-heading);
+        }
+        
+        /* Academics */
+        .academics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .academic-card {
+            background: var(--pure-white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .academic-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .academic-icon {
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-teal));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--pure-white);
+            font-size: 2rem;
+        }
+        
+        .academic-content {
+            padding: 1.5rem;
+        }
+        
+        .academic-content h3 {
+            color: var(--primary-blue);
+            margin-bottom: 0.75rem;
+            font-family: var(--font-heading);
+        }
+        
+        /* Admissions */
+        .admissions-section {
+            background-color: var(--light-cream);
+        }
+        
+        .admissions-process {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .process-step {
+            background: var(--pure-white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow-subtle);
+            position: relative;
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: var(--accent-gold);
+            color: var(--primary-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .process-step h3 {
+            color: var(--primary-blue);
+            margin: 1.5rem 0 1rem;
+        }
+        
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            height: 250px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(26, 54, 93, 0.8));
+            color: white;
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background-color: var(--primary-blue);
+            color: var(--pure-white);
+        }
+        
+        .contact-section .section-title,
+        .contact-section .section-description {
+            color: var(--pure-white);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 1.5rem;
+            font-family: var(--font-heading);
+            color: var(--accent-gold);
+        }
+        
+        .contact-details {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--accent-gold);
+        }
+        
+        .contact-item a {
+            color: var(--pure-white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-item a:hover {
+            color: var(--accent-gold);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--pure-white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: var(--accent-gold);
+            transform: translateY(-3px);
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            background: var(--pure-white);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .contact-form h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-heading);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark-charcoal);
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--gray-medium);
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: var(--accent-gold);
+            outline: none;
+        }
+        
+        .form-control.error {
+            border-color: #e53e3e;
+        }
+        
+        .error-message {
+            color: #e53e3e;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+        
+        .form-control.error + .error-message {
+            display: block;
+        }
+        
+        .success-message {
+            background-color: #c6f6d5;
+            color: #22543d;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        
+        .success-message.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Footer */
+        .main-footer {
+            background-color: var(--dark-charcoal);
+            color: var(--pure-white);
+            padding: 3rem 2rem 1.5rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: var(--container-max);
+            margin: 0 auto 2rem;
+        }
+        
+        .footer-column h3 {
+            color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: var(--gray-medium);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-gold);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: var(--container-max);
+            margin: 0 auto;
+            color: var(--gray-medium);
+            font-size: 0.9rem;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            box-shadow: var(--shadow-medium);
+            z-index: 999;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            
+            .main-nav ul {
+                gap: 1rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 1rem;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .main-nav {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--pure-white);
+                box-shadow: var(--shadow-medium);
+                padding: 2rem;
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+            }
+            
+            .main-nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .main-nav ul {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .cta-buttons {
+                display: none;
+            }
+            
+            .hero-title {
+                font-size: 2.3rem;
+            }
+            
+            .hero-cta-group {
+                flex-direction: column;
+            }
+            
+            .hero-stats {
+                gap: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            :root {
+                --section-padding: 3rem 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .contact-form {
+                padding: 1.5rem;
+            }
+            
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* Performance Optimizations */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Print Styles */
+        @media print {
+            .main-header, .hero-section, .whatsapp-float, .cta-buttons {
+                display: none;
+            }
+            
+            body {
+                color: #000;
+                background: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Accessibility: Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Echoes of Joy School",
+        "description": "Premium private school offering holistic education in Kenya",
+        "url": "https://echoesofjoy.ac.ke",
+        "logo": "https://echoesofjoy.ac.ke/logo.png",
+        "telephone": "+254-700-000000",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Prestige Road",
+            "addressLocality": "Nairobi",
+            "addressRegion": "Nairobi",
+            "postalCode": "00100",
+            "addressCountry": "KE"
+        },
+        "foundingDate": "2010",
+        "founder": {
+            "@type": "Person",
+            "name": "Dr. Jane Mwangi"
+        }
+    }
+    </script>
+    
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Echoes of <span>Joy</span> School</h1>
+                    <div class="tagline">Excellence • Integrity • Innovation</div>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="cta-buttons">
+                <a href="#admissions" class="btn btn-primary">
+                    <i class="fas fa-user-graduate"></i> Enroll Now
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Established 2010</span>
+                    <h1 id="hero-title" class="hero-title">Shaping Future Leaders Through <span style="color: var(--accent-gold)">Excellence</span></h1>
+                    <p class="hero-subtitle">Echoes of Joy School provides a transformative educational experience that nurtures intellectual curiosity, builds character, and prepares students for success in a rapidly changing world.</p>
+                    
+                    <div class="hero-cta-group">
+                        <a href="#admissions" class="btn btn-accent">
+                            <i class="fas fa-file-alt"></i> Start Application
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-calendar-alt"></i> Schedule Visit
+                        </a>
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-phone-alt"></i> Contact Us
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">University Acceptance</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">12:1</span>
+                            <span class="stat-label">Student-Teacher Ratio</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Extracurricular Programs</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Parent Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about-section" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Our Legacy</span>
+                    <h2 id="about-title" class="section-title">Nurturing Excellence Since 2010</h2>
+                    <p class="section-description">At Echoes of Joy, we believe education extends beyond academics to shape character, cultivate curiosity, and build confident global citizens.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h3 style="color: var(--primary-blue); margin-bottom: 1rem; font-family: var(--font-heading); font-size: 1.8rem;">A Tradition of Educational Excellence</h3>
+                        <p style="margin-bottom: 1rem;">Founded with a vision to redefine private education in Kenya, Echoes of Joy School has consistently ranked among the top institutions for academic performance and holistic development.</p>
+                        <p style="margin-bottom: 1.5rem;">Our campus is designed to inspire learning, with state-of-the-art facilities, green spaces, and technology-integrated classrooms that foster innovation and collaboration.</p>
+                        
+                        <div class="mission-vision-grid">
+                            <div class="mission-card">
+                                <h3>Our Mission</h3>
+                                <p>To provide a transformative educational experience that empowers students to achieve their highest potential and make meaningful contributions to society.</p>
+                            </div>
+                            <div class="vision-card">
+                                <h3>Our Vision</h3>
+                                <p>To be the leading institution in nurturing innovative thinkers, ethical leaders, and compassionate global citizens.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern school campus with students" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Academics Section -->
+        <section id="academics" class="academics-section" aria-labelledby="academics-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Learning Pathways</span>
+                    <h2 id="academics-title" class="section-title">Academic Excellence</h2>
+                    <p class="section-description">Our curriculum is designed to challenge and inspire, combining rigorous academics with practical life skills.</p>
+                </div>
+                
+                <div class="academics-grid">
+                    <div class="academic-card">
+                        <div class="academic-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="academic-content">
+                            <h3>Early Years (3-5 years)</h3>
+                            <p>Play-based learning that develops social, emotional, and cognitive skills through exploration and discovery.</p>
+                            <a href="#admissions" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="academic-card">
+                        <div class="academic-icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <div class="academic-content">
+                            <h3>Primary School (6-13 years)</h3>
+                            <p>Comprehensive curriculum with STEM, languages, arts, and character education to build strong foundations.</p>
+                            <a href="#admissions" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="academic-card">
+                        <div class="academic-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="academic-content">
+                            <h3>Secondary School (14-18 years)</h3>
+                            <p>University preparatory program with IGCSE, A-Levels, and career guidance for future success.</p>
+                            <a href="#admissions" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Admissions Section -->
+        <section id="admissions" class="admissions-section" aria-labelledby="admissions-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Join Our Community</span>
+                    <h2 id="admissions-title" class="section-title">Admissions Process</h2>
+                    <p class="section-description">We welcome applications from motivated students who seek academic challenge and personal growth.</p>
+                </div>
+                
+                <div class="admissions-process">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Inquiry & Tour</h3>
+                        <p>Schedule a personalized campus tour to experience our learning environment firsthand.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Application</h3>
+                        <p>Submit completed application forms with required documents for review.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Assessment</h3>
+                        <p>Student assessment and family interview to ensure mutual fit.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Enrollment</h3>
+                        <p>Receive acceptance and complete enrollment procedures to join our community.</p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="#contact" class="btn btn-accent" style="font-size: 1.1rem; padding: 1rem 2.5rem;">
+                        <i class="fas fa-download"></i> Download Application Form
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section" aria-labelledby="gallery-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">School Life</span>
+                    <h2 id="gallery-title" class="section-title">Campus Gallery</h2>
+                    <p class="section-description">Experience the vibrant life and beautiful facilities at Echoes of Joy School.</p>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/science-lab.jpg" alt="Students in science lab" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Science Laboratory</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/students-in-class.jpg" alt="Students in classroom" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Interactive Learning</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/ctivisports-aties.jpg" alt="Sports activities" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Athletics Program</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/art-class.jpg" alt="Art class" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Creative Arts</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/library.jpg" alt="School library" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Resource Center</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/graduation.jpg" alt="Graduation ceremony" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Graduation Day</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 id="contact-title" class="section-title">Contact Our Admissions Team</h2>
+                    <p class="section-description">We're here to answer your questions and help you discover if Echoes of Joy is the right fit for your family.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.25rem; color: var(--accent-gold);">Campus Address</h4>
+                                    <p>Prestige Road, Lavington<br>Nairobi, Kenya</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.25rem; color: var(--accent-gold);">Phone Numbers</h4>
+                                    <p>
+                                        <a href="tel:+254700000000">+254 700 000 000</a><br>
+                                        <a href="tel:+254711000000">+254 711 000 000</a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.25rem; color: var(--accent-gold);">Email Address</h4>
+                                    <p>
+                                        <a href="mailto:admissions@echoesofjoy.ac.ke">admissions@echoesofjoy.ac.ke</a><br>
+                                        <a href="mailto:info@echoesofjoy.ac.ke">info@echoesofjoy.ac.ke</a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: 0.25rem; color: var(--accent-gold);">Office Hours</h4>
+                                    <p>Monday - Friday: 7:30 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://facebook.com/echoesofjoyschool" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com/echoesofjoyschool" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/echoesofjoyschool" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://linkedin.com/company/echoesofjoyschool" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <div class="contact-form">
+                            <h3>Send Us a Message</h3>
+                            
+                            <div class="success-message" id="successMessage">
+                                <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully. We'll contact you within 24 hours.
+                            </div>
+                            
+                            <form id="contactForm" novalidate>
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                    <div class="error-message" id="nameError">Please enter your full name</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                    <div class="error-message" id="emailError">Please enter a valid email address</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                                    <div class="error-message" id="phoneError">Please enter a valid phone number</div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="studentGrade" class="form-label">Student's Grade Level</label>
+                                    <select id="studentGrade" name="studentGrade" class="form-control">
+                                        <option value="">Select Grade Level</option>
+                                        <option value="early-years">Early Years (3-5 years)</option>
+                                        <option value="primary">Primary School (6-13 years)</option>
+                                        <option value="secondary">Secondary School (14-18 years)</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Your Message *</label>
+                                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                                    <div class="error-message" id="messageError">Please enter your message</div>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-accent" style="width: 100%;">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="main-footer" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Echoes of Joy School</h3>
+                <p style="color: var(--gray-medium); margin-bottom: 1.5rem;">Providing premium education that prepares students for success in an ever-changing world.</p>
+                <div class="contact-item" style="margin-bottom: 0;">
+                    <div class="contact-icon" style="width: 40px; height: 40px; font-size: 1rem;">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <p style="color: var(--gray-medium);">Prestige Road, Lavington<br>Nairobi, Kenya</p>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Academics</h3>
+                <ul class="footer-links">
+                    <li><a href="#academics">Early Years Program</a></li>
+                    <li><a href="#academics">Primary School</a></li>
+                    <li><a href="#academics">Secondary School</a></li>
+                    <li><a href="#academics">Curriculum</a></li>
+                    <li><a href="#academics">Extracurricular</a></li>
+                    <li><a href="#academics">University Placement</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#admissions">School Calendar</a></li>
+                    <li><a href="#admissions">Parent Portal</a></li>
+                    <li><a href="#admissions">News & Events</a></li>
+                    <li><a href="#admissions">Careers</a></li>
+                    <li><a href="#contact">Privacy Policy</a></li>
+                    <li><a href="#contact">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2026 Echoes of Joy School. All rights reserved. | Designed for Premium Education</p>
+            <p>Developed by Kaynaero Technocrats</p>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/254700000000?text=Hello%20Echoes%20of%20Joy%20School,%20I%20would%20like%20more%20information%20about%20admissions" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mainNav = document.querySelector('.main-nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+            });
+        });
+        
+        // Form Validation
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+        
+        // Validation functions
+        function validateName(name) {
+            return name.trim().length >= 2;
+        }
+        
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+        
+        function validatePhone(phone) {
+            const re = /^[\+]?[0-9\s\-\(\)]+$/;
+            return re.test(phone) && phone.replace(/\D/g, '').length >= 9;
+        }
+        
+        function validateMessage(message) {
+            return message.trim().length >= 10;
+        }
+        
+        // Form submission handler
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Reset error states
+            document.querySelectorAll('.form-control').forEach(input => {
+                input.classList.remove('error');
+            });
+            
+            document.querySelectorAll('.error-message').forEach(error => {
+                error.style.display = 'none';
+            });
+            
+            // Validate each field
+            if (!validateName(name)) {
+                document.getElementById('name').classList.add('error');
+                document.getElementById('nameError').style.display = 'block';
+                isValid = false;
+            }
+            
+            if (!validateEmail(email)) {
+                document.getElementById('email').classList.add('error');
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            }
+            
+            if (!validatePhone(phone)) {
+                document.getElementById('phone').classList.add('error');
+                document.getElementById('phoneError').style.display = 'block';
+                isValid = false;
+            }
+            
+            if (!validateMessage(message)) {
+                document.getElementById('message').classList.add('error');
+                document.getElementById('messageError').style.display = 'block';
+                isValid = false;
+            }
+            
+            // If valid, show success message
+            if (isValid) {
+                // In a real implementation, you would send data to a server here
+                // For demo purposes, we'll just show success message
+                
+                successMessage.classList.add('show');
+                contactForm.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+                
+                // Google Analytics event tracking (placeholder)
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'form_submission', {
+                        'event_category': 'Contact',
+                        'event_label': 'Admissions Inquiry'
+                    });
+                }
+            }
+        });
+        
+        // Real-time validation
+        document.getElementById('name').addEventListener('blur', function() {
+            if (!validateName(this.value) && this.value.trim() !== '') {
+                this.classList.add('error');
+                document.getElementById('nameError').style.display = 'block';
+            }
+        });
+        
+        document.getElementById('email').addEventListener('blur', function() {
+            if (!validateEmail(this.value) && this.value.trim() !== '') {
+                this.classList.add('error');
+                document.getElementById('emailError').style.display = 'block';
+            }
+        });
+        
+        document.getElementById('phone').addEventListener('blur', function() {
+            if (!validatePhone(this.value) && this.value.trim() !== '') {
+                this.classList.add('error');
+                document.getElementById('phoneError').style.display = 'block';
+            }
+        });
+        
+        document.getElementById('message').addEventListener('blur', function() {
+            if (!validateMessage(this.value) && this.value.trim() !== '') {
+                this.classList.add('error');
+                document.getElementById('messageError').style.display = 'block';
+            }
+        });
+        
+        // Clear errors on input
+        document.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener('input', function() {
+                this.classList.remove('error');
+                const errorId = this.id + 'Error';
+                if (document.getElementById(errorId)) {
+                    document.getElementById(errorId).style.display = 'none';
+                }
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#home') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    return;
+                }
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerHeight = document.querySelector('.main-header').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Active nav link highlighting
+        function updateActiveNavLink() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.main-nav a');
+            
+            let currentSectionId = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    currentSectionId = '#' + section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveNavLink);
+        
+        // Initialize
+        updateActiveNavLink();
+        
+        // Performance: Lazy load images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+        
+        // Google Analytics Placeholder
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID'); // Replace with actual GA ID
+        
+        // Google Search Console verification placeholder
+        const meta = document.createElement('meta');
+        meta.name = 'google-site-verification';
+        meta.content = 'your-verification-code-here';
+        document.head.appendChild(meta);
+    </script>
+</body>
+</html>
